@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<Biblioteca>
+    <Categoria pasillo="1" Estanteria="2" nombre="Libros de suspenso">
+        <Libro fila="1" columna="1">
+            Quien Enganio a Roger Rabbit
+        </Libro>
+        <Libro fila="1" columna="2">
+            El misetrio de los Padrinos Magicos
+        </Libro>
+    </Categoria>
+    <Categoria pasillo="1" Estanteria="1" nombre="Libros de fantasia">
+        <Libro fila="1" columna="1">
+            Graduarse en 3 anios
+        </Libro>
+        <Libro fila="2" columna="1">
+            Dormir 8 horas diarias
+        </Libro>
+        <Libro fila="3" columna="1">
+            Sacar promedio de 98
+        </Libro>
+    </Categoria>
+    <Categoria pasillo="2" Estanteria="2" nombre="Libros de misterio">
+        <Libro fila="1" columna="1">
+            El misterio de Norwood
+        </Libro>
+    </Categoria>
+</Biblioteca>
