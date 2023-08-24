@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<senales>
+	<senal nombre="Ejemplo1" t="4" A="2">
+		<dato t="1" A="1">39</dato>
+		<dato t="1" A="2">0</dato>
+		<dato t="2" A="1">2</dato>
+		<dato t="2" A="2">0</dato>
+		<dato t="3" A="1">0</dato>
+		<dato t="3" A="2">67</dato>
+		<dato t="4" A="1">17</dato>
+		<dato t="4" A="2">0</dato>
+	</senal>
+	<senal nombre="Ejemplo2" t="3" A="5">
+		<dato t="1" A="1">0</dato>
+		<dato t="1" A="2">67</dato>
+		<dato t="1" A="3">0</dato>
+		<dato t="1" A="4">80</dato>
+		<dato t="1" A="5">22</dato>
+		<dato t="2" A="1">0</dato>
+		<dato t="2" A="2">80</dato>
+		<dato t="2" A="3">0</dato>
+		<dato t="2" A="4">91</dato>
+		<dato t="2" A="5">64</dato>
+		<dato t="3" A="1">0</dato>
+		<dato t="3" A="2">0</dato>
+		<dato t="3" A="3">1</dato>
+		<dato t="3" A="4">0</dato>
+		<dato t="3" A="5">27</dato>
+	</senal>
+	<senal nombre="Ejemplo3" t="4" A="2">
+		<dato t="1" A="1">71</dato>
+		<dato t="1" A="2">0</dato>
+		<dato t="2" A="1">22</dato>
+		<dato t="2" A="2">0</dato>
+		<dato t="3" A="1">80</dato>
+		<dato t="3" A="2">0</dato>
+		<dato t="4" A="1">0</dato>
+		<dato t="4" A="2">0</dato>
+	</senal>
+	<senal nombre="Ejemplo4" t="3" A="5">
+		<dato t="1" A="1">22</dato>
+		<dato t="1" A="2">0</dato>
+		<dato t="1" A="3">0</dato>
+		<dato t="1" A="4">0</dato>
+		<dato t="1" A="5">28</dato>
+		<dato t="2" A="1">71</dato>
+		<dato t="2" A="2">0</dato>
+		<dato t="2" A="3">51</dato>
+		<dato t="2" A="4">96</dato>
+		<dato t="2" A="5">0</dato>
+		<dato t="3" A="1">91</dato>
+		<dato t="3" A="2">94</dato>
+		<dato t="3" A="3">0</dato>
+		<dato t="3" A="4">0</dato>
+		<dato t="3" A="5">0</dato>
+	</senal>
+	<senal nombre="Ejemplo5" t="3" A="4">
+		<dato t="1" A="1">83</dato>
+		<dato t="1" A="2">0</dato>
+		<dato t="1" A="3">71</dato>
+		<dato t="1" A="4">4</dato>
+		<dato t="2" A="1">6</dato>
+		<dato t="2" A="2">0</dato>
+		<dato t="2" A="3">9</dato>
+		<dato t="2" A="4">45</dato>
+		<dato t="3" A="1">50</dato>
+		<dato t="3" A="2">0</dato>
+		<dato t="3" A="3">68</dato>
+		<dato t="3" A="4">0</dato>
+	</senal>
+</senales>

@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<senal nombre="Prueba 1" t="3" A="7">
+	<dato t="1" A="1">82</dato>
+	<dato t="1" A="2">68</dato>
+	<dato t="1" A="3">99</dato>
+	<dato t="1" A="4">68</dato>
+	<dato t="1" A="5">69</dato>
+	<dato t="1" A="6">91</dato>
+	<dato t="1" A="7">70</dato>
+	<dato t="2" A="1">47</dato>
+	<dato t="2" A="2">85</dato>
+	<dato t="2" A="3">26</dato>
+	<dato t="2" A="4">48</dato>
+	<dato t="2" A="5">67</dato>
+	<dato t="2" A="6">47</dato>
+	<dato t="2" A="7">27</dato>
+	<dato t="3" A="1">67</dato>
+	<dato t="3" A="2">37</dato>
+	<dato t="3" A="3">85</dato>
+	<dato t="3" A="4">78</dato>
+	<dato t="3" A="5">29</dato>
+	<dato t="3" A="6">39</dato>
+	<dato t="3" A="7">80</dato>
+</senal>
