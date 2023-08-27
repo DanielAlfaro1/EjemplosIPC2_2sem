@@ -1,0 +1,62 @@
+graph ""
+    {
+        fontname="Helvetica,Arial,sans-serif"
+        node [fontname="Helvetica,Arial,sans-serif"]
+        edge [fontname="Helvetica,Arial,sans-serif"]
+
+    subgraph Prueba1 
+        {
+        n0 [label="Lista 1"]
+
+n1 [label="t5"]
+n0 -- n1;
+n2 [label="A4"]
+n0 -- n2;
+
+#Fila1
+F1C1 [label="4"];
+n0 -- F1C1;
+F1C2 [label="6"];
+n0 -- F1C2;
+F1C3 [label="0"];
+n0 -- F1C3;
+F1C4 [label="8"];
+n0 -- F1C4;
+#Fila2
+F2C1 [label="0"];
+F1C1 -- F2C1;
+F2C2 [label="0"];
+F1C2 -- F2C2;
+F2C3 [label="12"];
+F1C3 -- F2C3;
+F2C4 [label="6"];
+F1C4 -- F2C4;
+#Fila3
+F3C1 [label="6"];
+F2C1 -- F3C1;
+F3C2 [label="8"];
+F2C2 -- F3C2;
+F3C3 [label="0"];
+F2C3 -- F3C3;
+F3C4 [label="4"];
+F2C4 -- F3C4;
+#Fila4
+F4C1 [label="2"];
+F3C1 -- F4C1;
+F4C2 [label="0"];
+F3C2 -- F4C2;
+F4C3 [label="2"];
+F3C3 -- F4C3;
+F4C4 [label="10"];
+F3C4 -- F4C4;
+#Fila5
+F5C1 [label="0"];
+F4C1 -- F5C1;
+F5C2 [label="0"];
+F4C2 -- F5C2;
+F5C3 [label="6"];
+F4C3 -- F5C3;
+F5C4 [label="2"];
+F4C4 -- F5C4;
+}
+}
