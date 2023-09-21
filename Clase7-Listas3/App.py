@@ -53,6 +53,7 @@ VaciarLista(UnaListaSim)
 
 
 
+print("INSERTAMOS EN LISTA DOBLE")
 
 UnaListaDoble = ListaDoble.ListaDoble()
 
@@ -67,6 +68,13 @@ Dato3 = Dato.Dato("El Dato 3", 3)
 UnaListaDoble.Insertar(Dato3)
 Dato4 = Dato.Dato("El Dato 4", 4)
 UnaListaDoble.Insertar(Dato4)
+UnaListaDoble.ImprimirElmentos()
+
+print("INSERTAMOS EN MEDIO DE NODOS")
+Dato5 = Dato.Dato("Nuevo espacio 3", 5)
+UnaListaDoble.InsertarIndice(Dato5, 2)
+UnaListaDoble.ImprimirElmentos()
+
 '''
 
 print("Al revés")

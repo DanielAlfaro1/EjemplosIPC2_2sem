@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+   <listaDrones>
+      <dron>DronY</dron>
+      <dron>DronX</dron>
+      <dron>DronW</dron>
+      <dron>DronZ</dron>
+      <dron>DronA</dron>
+   </listaDrones>
+   <listaSistemasDrones>
+      <sistemaDrones nombre="SD1">
+         <alturaMaxima>7</alturaMaxima>
+         <cantidadDrones>3</cantidadDrones>
+         <contenido>
+            <dron>DronX</dron>
+            <alturas>
+               <altura valor="1">A</altura>
+               <altura valor="2">I</altura>
+               <altura valor="3">D</altura>
+               <altura valor="4">F</altura>
+               <altura valor="5">I</altura>
+               <altura valor="6">J</altura>
+               <altura valor="7">K</altura>
+            </alturas>
+         </contenido>
+         <contenido>
+            <dron>DronY</dron>
+            <alturas>
+               <altura valor="1">2</altura>
+               <altura valor="2">C</altura>
+               <altura valor="3">P</altura>
+               <altura valor="4">G</altura>
+               <altura valor="5">L</altura>
+               <altura valor="6">M</altura>
+               <altura valor="7">N</altura>
+            </alturas>
+         </contenido>
+         <contenido>
+            <dron>DronZ</dron>
+            <alturas>
+               <altura valor="1">B</altura>
+               <altura valor="2">C</altura>
+               <altura valor="3">E</altura>
+               <altura valor="4">H</altura>
+               <altura valor="5">O</altura>
+               <altura valor="6">P</altura>
+               <altura valor="7">Q</altura>
+            </alturas>
+         </contenido>
+      </sistemaDrones>
+      <sistemaDrones nombre="SDF">
+         <alturaMaxima>1</alturaMaxima>
+         <cantidadDrones>4</cantidadDrones>
+         <contenido>
+            <dron>DronW</dron>
+            <alturas>
+               <altura valor="1">I</altura>
+            </alturas>
+         </contenido>
+         <contenido>
+            <dron>DronX</dron>
+            <alturas>
+               <altura valor="1">P</altura>
+            </alturas>
+         </contenido>
+         <contenido>
+            <dron>DronY</dron>
+            <alturas>
+               <altura valor="1">C</altura>
+            </alturas>
+         </contenido>
+         <contenido>
+            <dron>DronZ</dron>
+            <alturas>
+               <altura valor="1">2</altura>
+            </alturas>
+         </contenido>
+      </sistemaDrones>
+   </listaSistemasDrones>
+   <listaMensajes>
+      <Mensaje nombre="msg">
+         <sistemaDrones>SD1</sistemaDrones>
+         <instrucciones>
+            <instruccion dron="DronX">2</instruccion>
+            <instruccion dron="DronY">3</instruccion>
+            <instruccion dron="DronZ">2</instruccion>
+            <instruccion dron="DronY">1</instruccion>
+         </instrucciones>
+      </Mensaje>
+      <Mensaje nombre="msg2">
+         <sistemaDrones>SDF</sistemaDrones>
+         <instrucciones>
+            <instruccion dron="DronW">1</instruccion>
+            <instruccion dron="DronX">1</instruccion>
+            <instruccion dron="DronY">1</instruccion>
+            <instruccion dron="DronZ">1</instruccion>
+         </instrucciones>
+      </Mensaje>
+   </listaMensajes>
+</config>

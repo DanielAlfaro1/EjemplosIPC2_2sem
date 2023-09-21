@@ -19,6 +19,45 @@ class ListaDoble:
             NuevoNodo.SetAnterior(self.Final)
             self.Final = NuevoNodo
 
+    def InsertarIndice(self, Dato, indice):
+        #indice será un valor numérico, que indica la posición de la lista donde vamos a colocar un nuevo dato, la primera posición será 0
+        if self.Inicio == None:
+            if indice == 0:
+                #Insertamos en la primera posición de la lista
+                NuevoNodo = NodoDoble(Dato)
+                self.Inicio = NuevoNodo
+                self.Final = NuevoNodo
+                self.Errante = NuevoNodo
+                return None
+
+            print("La lista está vacía, el indice no apunta a la primera posición entonces no inserta nada.")
+            return None
+        if indice < 0:
+            print("No se pueden eliminar posiciones menores a 0")
+            return None
+        if indice == 0:
+            NuevoNodo = NodoDoble(Dato)
+            NuevoNodo.Siguiente = self.Inicio
+            self.Inicio.Anterior = NuevoNodo
+            self.Inicio = NuevoNodo
+            return None
+        Auxiliar = self.Inicio
+        Contador = 0
+        Auxliar2 = None
+        while Auxiliar != None:
+            if Contador == indice:
+                NuevoNodo = NodoDoble(Dato)
+                NuevoNodo.Siguiente = Auxiliar
+                NuevoNodo.Anterior = Auxliar2
+                Auxiliar.Anterior = NuevoNodo
+                Auxliar2.Siguiente = NuevoNodo
+                return None
+            Auxliar2 = Auxiliar
+            Auxiliar = Auxiliar.ObtenerSiguiente()
+            Contador += 1
+        print("No existe la posición indicada")
+        return None
+
     def Pop(self):
         if self.Inicio != None:
             if self.Inicio.ObtenerSiguiente() == None:
