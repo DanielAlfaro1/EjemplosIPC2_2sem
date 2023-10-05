@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+    <head>
+        <title>CLASE 9 - HTML y Django con CSS</title>
+        <link rel="stylesheet" href="{% static 'estilo1.css' %}">
+    </head>
+    <body>
+        <hgroup class="EstiloCabeza Cabeza">
+            <h1 id="Encabezado1">PAGINA DE EJEMPLO con CSS</h1>
+            <h2 class="CabezaSecundaria" id="Encabezado2">Ejemplo de Headers</h2>
+        </hgroup>
+        <p align="center">
+            Esto es un texto que debe ir centrado
+        </p>
+        <p align="left">
+            Texto a la izquierda
+        </p>
+        <p align="right">
+            TExto a la derecha
+        </p>
+        <p align="justify">
+            Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+        </p>
+        <footer>
+            <address>
+                Página creada por Daniel Alfaro<br/>
+                Auxiliar de IPC2
+            </address>
+        </footer>
+    </body>
+</html>
