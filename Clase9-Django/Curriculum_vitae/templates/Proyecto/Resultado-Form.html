@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+    <head>
+        <title>Palabras Diccionario</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    </head>
+    <body>
+        <div>
+            <h2>Las palabras registradas fueron:</h2>
+            <div>
+                <h3>PALABRAS POSITIVAS</h3>
+                {% for palabra in Resultado.PalabrasRecibidas.PalabrasPositivas %}
+                    <p>{{palabra}}</p>
+                    </br>
+                {% endfor %}
+            </div>
+            <div>
+                <h3>PALABRAS NEGATIVAS</h3>
+                {% for palabra in Resultado.PalabrasRecibidas.PalabrasNegativas %}
+                    <p>{{palabra}}</p>
+                    </br>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>

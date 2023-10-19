@@ -1,0 +1,29 @@
+{% load static %}
+<html>
+    <head>
+        <title>Pagina dinamica</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    </head>
+    <body>
+        <div>
+            <h1>Diccionario</h1>
+        </div>
+        <div>
+            <h2><a href="{% url 'PaginaArchivoConfiguracion' %}">Subir palabras</a></h2>
+        </div>
+        <div>
+            <h3>Palabras buenas</h3>
+            {% for palabra in Palabras.Buenas %}
+                
+                    <p><b>Fecha: </b> {{palabra}}</p>            
+            {% endfor %}
+        </div>
+        <div>
+            <h3>Palabras malas</h3>
+            {% for palabra in Palabras.Malas %}
+                    <p><b>Fecha: </b> {{palabra}}</p>            
+            {% endfor %}
+        </div>
+    </body>
+</html>

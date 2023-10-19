@@ -1,0 +1,17 @@
+{% load static %}
+<html>
+    <head>
+        <title>Form Diccionario</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    </head>
+    <body>
+        <div>
+            <h2>Subir archivo de Diccionario</h2>
+            <form method="POST" enctype="multipart/form-data"> {% csrf_token %}
+                {{formu.as_p}}
+                <button type="submit" class="save btn btn-default">Enviar</button>
+            </form>
+        </div>
+    </body>
+</html>

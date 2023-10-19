@@ -1,0 +1,17 @@
+{% load static %}
+<html>
+    <head>
+        <title>Archivo configuracion</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    </head>
+    <body>
+        <div>
+            <h2>Sube tu archivo de configuracion</h2>
+            <form method="POST" enctype="multipart/form-data"> {% csrf_token %}
+                {{form.as_p}}
+                <button type="submit" class="save btn btn-default">Guardar</button>
+            </form>
+        </div>
+    </body>
+</html>
