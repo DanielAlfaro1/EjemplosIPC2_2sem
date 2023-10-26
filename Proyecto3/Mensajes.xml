@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<MENSAJES>
+    <MENSAJE>
+        <FECHA> Guatemala, 15/01/2023 15:25 hrs. </FECHA>
+        <TEXTO> Bienvenido a USAC @estudiante01 @estudiante02,
+            es un gusto que seas parte de esta institución, espero no darte una triste experiencia
+            #bienvenidaUSAC#
+        </TEXTO>
+    </MENSAJE>
+    <MENSAJE>
+        <FECHA> Guatemala, 16/01/2023 23:25 hrs. </FECHA>
+        <TEXTO> Otro mensaje de prueba @estudiante04,
+            Bienvenido a la publicación, espero que te la pases feliz
+            #bienvenidaUSAC#
+        </TEXTO>
+    </MENSAJE>
+</MENSAJES>

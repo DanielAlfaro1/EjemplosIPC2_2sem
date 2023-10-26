@@ -1,4 +1,5 @@
 from controllers.controllers import *
+from controllers.ControlBaseDatos import *
 from flask import Blueprint, jsonify, Response, request
 
 RutasSaludos = Blueprint("RutasSaludos", __name__)
@@ -51,3 +52,13 @@ def Archivo_Conf():
     #print(request.data)
     Resultado = Configuracion_Diccionario(request.data)
     return(jsonify(Resultado))
+
+@RutasProyecto.route("/CargarDiccionario", methods=["GET"])
+def CargaDiccionario():
+    Resultado = LeerDiccionario()
+    return(Resultado)
+
+@RutasProyecto.route("/ReiniciarDiccionario", methods=["GET"])
+def RoutesReiniciarDiccionario():
+    Resultado = ReinciarDiccionario()
+    return Resultado

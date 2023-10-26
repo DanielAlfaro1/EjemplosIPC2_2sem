@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 from Objeto.ObjetoRandom import ObjetoRandom
 import json
+from Objeto.Diccionario import Diccionario
 
 listaPalabras = {
     'PalabrasPositivas' : [],
@@ -37,26 +38,32 @@ def Configuracion_Diccionario(Parametros):
     params = Parametros.decode('utf-8')
     params = json.loads(params)
     raiz = ET.fromstring(params['Diccionario'])
-    for diccionario_hijos in raiz:
-        print(diccionario_hijos)
-        if diccionario_hijos.tag == 'sentimientos_positivos':
-            for Palabras in diccionario_hijos:
-                listaPalabras['PalabrasPositivas'].append(Palabras.text.strip())
-        if diccionario_hijos.tag == 'sentimientos_negativos':
-            for Palabras in diccionario_hijos:
-                listaPalabras['PalabrasNegativas'].append(Palabras.text.strip())
+    MiDiccionario = Diccionario()
+    MiDiccionario.CargarNuevasPalabras(raiz)
+    MiDiccionario.GuardarDiccionario()
     Data = {
         "Codigo":200,
         "Mensaje": "Tu Diccionario ha sido registrado",
-        "PalabrasRecibidas": listaPalabras
+        "PalabrasRecibidas": MiDiccionario.ObtenerPalbrasJSON()
     }
-    print(listaPalabras)
+    print(MiDiccionario.ObtenerPalbrasJSON())
     return(Data)
 
 def Get_Palabras():
+    MiDiccionario = Diccionario()
     Data = {
         "Codigo":200,
         "Mensaje": "Las palabras ya registradas en el sistema son",
-        "PalabrasRegistradas": listaPalabras
+        "PalabrasRegistradas": MiDiccionario.ObtenerPalbrasJSON()
+    }
+    return Data
+
+def ReinciarDiccionario():
+    MiDiccionario = Diccionario()
+    MiDiccionario.Reiniciar()
+    Data = {
+        "Codigo":200,
+        "Mensaje": "Las palabras ya registradas en el sistema son",
+        "PalabrasRegistradas": MiDiccionario.ObtenerPalbrasJSON()
     }
     return Data

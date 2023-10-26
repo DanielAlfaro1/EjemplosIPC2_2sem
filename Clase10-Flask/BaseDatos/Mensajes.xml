@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListadoMensajes>
+    <Mensaje>
+        <Fecha>26/10/2023</Fecha>
+        <Texto>Bienvenido a USAC @estudiante01 @estudiante02, es un gusto que seas parte de esta institución #bienvenidaUSAC#</Texto>
+        <ListaHashtag>
+            <Hashtag>#bienvenidaUSAC#</Hashtag>
+        </ListaHashtag>
+        <ListaMenciones>
+            <Mencion>@estudiante01</Mencion>
+            <Mencion>@estudiante02</Mencion>
+        </ListaMenciones>
+    </Mensaje>
+</ListadoMensajes>
