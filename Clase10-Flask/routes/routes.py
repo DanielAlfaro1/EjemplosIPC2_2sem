@@ -62,3 +62,9 @@ def CargaDiccionario():
 def RoutesReiniciarDiccionario():
     Resultado = ReinciarDiccionario()
     return Resultado
+
+@RutasProyecto.route("/PruebaFecha", methods=["POST"])
+def PruebaFecha():
+    print(request.data)
+    Resultado = LecturaFecha(request.data)
+    return Resultado

@@ -2,6 +2,9 @@
 <ListadoMensajes>
     <Mensaje>
         <Fecha>26/10/2023</Fecha>
+        <Dia>26</Dia>
+        <Mes>10</Mes>
+        <Anio>2023</Anio>
         <Texto>Bienvenido a USAC @estudiante01 @estudiante02, es un gusto que seas parte de esta institución #bienvenidaUSAC#</Texto>
         <ListaHashtag>
             <Hashtag>#bienvenidaUSAC#</Hashtag>
